@@ -43,10 +43,10 @@ public class HomeControllerTest {
 		}
 	
 	@Test
-	public void test() throws Exception {
+	public void Test_page_request() throws Exception {
 		//fail("Not yet implemented");
 		
-		mockMvc.perform(MockMvcRequestBuilders.get("home"))
+		mockMvc.perform(MockMvcRequestBuilders.get("/home"))
 			.andExpect(status().isOk());
 	}
 
